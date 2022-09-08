@@ -10,7 +10,15 @@
     <h1>Hello vue</h1>
 
     <div id="app">
-        <h2> I am the template now</h2>
+        <p> {{ title }} </p>
+        <p> {{ author }} {{ age }} </p>
+
+
+
+        <botton v-on:click = "age++"> Increase age by 1 </botton>
+        <botton v-on:click = "age--"> Decrease age by 1 </botton>
+
+        <div @click = "changeTitle('newwwors')">Change book title </div>
     </div>
 
     <script src="app.js"></script>
